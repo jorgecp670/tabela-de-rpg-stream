@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RPG Game</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+  <h1>RPG Game</h1>
+  <div class="section">
+    <h2>Ferimentos Profundos</h2>
+    <button onclick="rolarFerimentos()">Rolar Ferimentos Profundos</button>
+    <p class="result" id="ferimentosResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Ácido</h2>
+    <button onclick="rolarAcido()">Rolar Efeito de Ácido</button>
+    <p class="result" id="acidoResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Corte</h2>
+    <button onclick="rolarCorte()">Rolar Efeito de Corte</button>
+    <p class="result" id="corteResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Eletricidade</h2>
+    <button onclick="rolarEletricidade()">Rolar Efeito de Eletricidade</button>
+    <p class="result" id="eletricidadeResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Fogo</h2>
+    <button onclick="rolarFogo()">Rolar Efeito de Fogo</button>
+    <p class="result" id="fogoResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Frio</h2>
+    <button onclick="rolarFrio()">Rolar Efeito de Frio</button>
+    <p class="result" id="frioResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Impacto</h2>
+    <button onclick="rolarImpacto()">Rolar Efeito de Impacto</button>
+    <p class="result" id="impactoResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Perfuração</h2>
+    <button onclick="rolarPerfuração()">Rolar Efeito de Perfuração</button>
+    <p class="result" id="perfuraçãoResultado"></p>
+  </div>
+
+  <div class="section">
+    <h2>Veneno</h2>
+    <button onclick="rolarVeneno()">Rolar Efeito de Veneno</button>
+    <p class="result" id="venenoResultado"></p>
+  </div>
+  
+  <div class="section">
+    <h2>Dano Massivo</h2>
+    <button onclick="rolarDanoMassivo()">Rolar Efeito de Dano Massivo</button>
+    <p class="result" id="danoMassivoResultado"></p>
+  </div>
+
+</div>
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyACHyY-4JNF1DWO1hjNiqCJDLWDK5rI7pk",
+  authDomain: "tabela-de-rpg.firebaseapp.com",
+  projectId: "tabela-de-rpg",
+  storageBucket: "tabela-de-rpg.appspot.com",
+  messagingSenderId: "779306470831",
+  appId: "1:779306470831:web:1cd828130bfe63a328f35a"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+<script src="script.js"></script>
+</body>
+</html>
